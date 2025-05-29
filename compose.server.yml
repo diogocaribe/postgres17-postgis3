@@ -17,6 +17,7 @@ services:
 networks:
   inema:
     driver: bridge
+    externaç: true
 
 volumes:
   pgdata:
