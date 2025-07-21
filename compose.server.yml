@@ -11,6 +11,10 @@ services:
       PGDATA: /data/postgres
     volumes:
         - pgdata:/data/postgres
+    logging:
+      options:
+        max-size: "200m"
+        max-file: "7"
     networks:
       - inema
 
